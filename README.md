@@ -32,7 +32,7 @@ If `pip` is missing, install it:
 sudo apt install python3-pip -y
 ```
 
-## 2. Create a Virtual Environment (Optional but Recommended)
+## 2. Create a Virtual Environment 
 To avoid dependency conflicts, create a virtual environment:
 
 ```bash
@@ -82,3 +82,21 @@ Then, configure Playwright within your Pytest framework.
 
 You're now ready to use Playwright on Linux Mint! 🚀
 
+---
+
+To run tests in parallel:
+
+pip install pytest-xdist
+then
+
+```bash
+pytest --numprocesses=4
+```
+
+---
+
+install reporter 
+pip install pytest-html
+
+generate report with:
+pytest --html=report.html
