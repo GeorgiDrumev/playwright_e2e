@@ -1,2 +1,5 @@
 .idea/
 venv/
+playwright-env/
+playwright_env/
+__pycache__/
